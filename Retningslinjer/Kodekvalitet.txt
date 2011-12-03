@@ -1,0 +1,13 @@
+
+Koden skal være engelske
+
+metoder med lange navn er ok, a() er ikke ok.
+
+_veldig_ fornuftige variabel/funksjonsnavn
+
+Slik skal metodene se ut:
+metoder(){
+
+}
+
+All kode du skriver skal du kunne forklare for de andre i teamet.

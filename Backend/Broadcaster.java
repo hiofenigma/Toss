@@ -5,16 +5,16 @@
  * @author Runar J¿rgensen
  */
 
-    public class Broadcaster {
-    
-private Device thisDevice;
+public class Broadcaster {
+
+    private Device thisDevice;
 
 
-/**
-  * Constructor for Broadcaster
-  */
+    /**
+     * Constructor for Broadcaster
+     */
     public Broadcaster(Device thisDevice){
-    	this.thisDevice = thisDevice;
+        this.thisDevice = thisDevice;
     }
 
     /*
@@ -22,14 +22,14 @@ private Device thisDevice;
      */ 
 
     public int sendBeacon(){
-    /* send broadcast-message to network with the global class values
-     * return 0 if success, 1/2/../n if error.
-     *  Use a interface for the error-definitions?
-     */
+        /* send broadcast-message to network with the global class values
+         * return 0 if success, 1/2/../n if error.
+         *  Use a interface for the error-definitions?
+         */
         return 0;
     }
-    
 
-    
+
+
 
 }

@@ -1,4 +1,0 @@
-#ignorer swap-filer fra vim
-*.swp
-#ignorer eclipse prosjektfiler
-.project/*

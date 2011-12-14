@@ -2,3 +2,5 @@
 *.swp
 #ignorer eclipse prosjektfiler
 *.project*
+#ignorer flere eclipsefiler
+*.classpath

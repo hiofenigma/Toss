@@ -21,7 +21,7 @@ public class Listener extends Thread{
 	/*
 	 * @Deprecated
 	 */
-	private deviceDetected(){
+	private boolean deviceDetected(){
 		/*Execute DataHandler.addTouserList()
 		 * even if the device is registered,
 		 * what to do with the info is DataHandlers problem

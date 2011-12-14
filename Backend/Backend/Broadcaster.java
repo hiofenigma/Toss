@@ -4,6 +4,7 @@
  * @author Anders Skaalsveen
  * @author Runar J¿rgensen
  */
+package Backend;
 
 public class Broadcaster {
 

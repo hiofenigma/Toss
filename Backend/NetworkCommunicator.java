@@ -2,38 +2,36 @@
  * class NetworkCommunicator
  * @author Stian Johansen
  * @author Anders Skaalsveen
- * @author Runar JÃ¸rgensen
+ * @author Runar J¿rgensen
  */
 
 import java.lang.Thread;
 
 public class NetworkCommunicator extends Thread {
-Scanner scanner;
-Broadcaster broadcaster;
-int broadcastTimeout;
-/**
-  * Constructor for NetworkCommunicator
-  * 
-  */
-    public NetworkCommunicator(int broadcastTimeout) {
-        scanner     = new Scanner();
-        broadcaster = new Broadcaster();
-        this.broadcastTimeout = broadcastTimeout;
+	Listener listener;
+	Broadcaster broadcaster;
+	int broadcastTimeout;
 
-    }
-    /*
-     * @Deprecated
-     */ 
+	/**
+	 * Constructor for NetworkCommunicator
+	 * 
+	 */
+	public NetworkCommunicator(int broadcastTimeout) {
+		listener = new Listener();
+		broadcaster = new Broadcaster();
+		this.broadcastTimeout = broadcastTimeout;
 
-    public void run(){
-        /*Do the magic; */
-        while(true){
-            broadcaster.sendBeacon();
-            /*<Sleep>*/
-            
-        }
-            
-    
-    }
-    
+	}
+	/*
+	 * @Deprecated
+	 */
+	public void run() {
+		/* Do the magic; */
+		while (true) {
+			broadcaster.sendBeacon();
+			/* <do more and sleep> */
+		}
+
+	}
+
 }

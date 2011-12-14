@@ -2,25 +2,19 @@
  * class Broadcaster
  * @author Stian Johansen
  * @author Anders Skaalsveen
- * @author Runar JÃ¸rgensen
+ * @author Runar J¿rgensen
  */
 
     public class Broadcaster {
     
-    private String uniqueID;
-    private String name;
-    private int ip;
-    private String macAddress;
+private Device thisDevice;
 
 
 /**
   * Constructor for Broadcaster
   */
-    public Broadcaster(String uniqueID,String name, int ip, String macAddress){
-        this.uniqueID = uniqueID;
-        this.name = name;
-        this.ip = ip;
-        this.macAddress = macAddress;
+    public Broadcaster(Device thisDevice){
+    	this.thisDevice = thisDevice;
     }
 
     /*

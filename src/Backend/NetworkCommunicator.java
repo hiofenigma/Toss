@@ -18,7 +18,11 @@ public class NetworkCommunicator extends Thread {
 	 * 
 	 */
 	public NetworkCommunicator(int broadcastTimeout) {
+		/*listener is its own thread*/
 		listener = new Listener();
+		listener.start();
+		/*broadcaster is triggered from this thread.*/
+		//QQ: create it as its own thread for readability?
 		broadcaster = new Broadcaster();
 		this.broadcastTimeout = broadcastTimeout;
 

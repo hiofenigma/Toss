@@ -4,3 +4,9 @@
 *.project*
 #ignorer flere eclipsefiler
 *.classpath
+/src/nbproject/private/
+/nbproject/private/
+build.xml
+*nbproject*
+*manifest*
+/build/

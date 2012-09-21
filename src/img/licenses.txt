@@ -1,0 +1,7 @@
+radio: public domain
+
+network: GPLv2
+    http://openiconlibrary.sourceforge.net/gallery2/?./Icons/places/gnome-style/network-workgroup.png
+
+computer: CC-BY-SA 3.0
+    http://openiconlibrary.sourceforge.net/gallery2/?./Icons/places/oxygen-style/user-desktop.png

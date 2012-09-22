@@ -23,7 +23,7 @@ public class NetworkCommunicator extends Thread {
 		listener.start();
 		/*broadcaster is triggered from this thread.*/
 		//QQ: create it as its own thread for readability?
-		broadcaster = new Broadcaster(new Device());
+		broadcaster = new Broadcaster(new Device("A MACaddress"));
 		this.broadcastTimeout = broadcastTimeout;
 
 	}

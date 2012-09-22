@@ -4,14 +4,20 @@
  */
 package Frontend;
 
+import Backend.*;
 /**
  *
- * @author stian
+ * @author Stian Johansen
  */
 public class FrontendMain {
     public static void main(String[] args) {
     	System.out.printf("Hello");
 
+    	Device thisDevice = new Device("A MAC-address");
+    	Broadcaster test = new Broadcaster(thisDevice);
+    	test.sendBeacon();
+    	
+    	
         java.awt.EventQueue.invokeLater(new Runnable() {
 
             public void run() {

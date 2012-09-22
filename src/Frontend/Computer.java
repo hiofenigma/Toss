@@ -8,7 +8,7 @@ import javax.swing.ImageIcon;
 
 /**
  *
- * @author stian
+ * @author Stian Johansen
  */
 public class Computer extends javax.swing.JLabel{
     private ImageIcon icon;

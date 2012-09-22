@@ -4,9 +4,10 @@
  */
 package Frontend;
 
+
 /**
  *
- * @author stian
+ * @author Stian Johansen
  */
 public class discoveryWindow extends javax.swing.JFrame {
 
@@ -52,6 +53,7 @@ public class discoveryWindow extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+    
 
     /**
      * @param args the command line arguments

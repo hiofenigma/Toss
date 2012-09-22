@@ -1,12 +1,4 @@
-#ignorer swap-filer fra vim
-*.swp
-#ignorer eclipse prosjektfiler
-*.project*
-#ignorer flere eclipsefiler
-*.classpath
-/src/nbproject/private/
-/nbproject/private/
-build.xml
-*nbproject*
-*manifest*
-/build/
+.classpath
+.project
+.settings
+bin/

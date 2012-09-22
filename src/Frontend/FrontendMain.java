@@ -9,8 +9,8 @@ package Frontend;
  * @author stian
  */
 public class FrontendMain {
-
     public static void main(String[] args) {
+    	System.out.printf("Hello");
 
         java.awt.EventQueue.invokeLater(new Runnable() {
 
@@ -22,7 +22,7 @@ public class FrontendMain {
         java.awt.EventQueue.invokeLater(new Runnable() {
 
             public void run() {
-                new fileTransferWindow().setVisible(true);
+                //new fileTransferWindow().setVisible(true);
             }
         });
 

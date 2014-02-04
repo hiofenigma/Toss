@@ -4,7 +4,7 @@
  * 
  * @author Stian Johansen
  * @author Anders Skaalsveen
- * @author Runar J¿rgensen
+ * @author Runar Jï¿½rgensen
  */
 package Backend;
 
@@ -12,7 +12,28 @@ public class Device {
     private String uniqueID;
     private String name;
     private int ip;
-    private String macAddress;
+    // A MAC address never changes, so it should be static and determined upon the construction of the device.
+    final private String macAddress;
+    
+    public Device(String macAddress){
+    	this.macAddress = macAddress;
+    }
+    
+    public Device(String macAddress, String name){
+    	this(macAddress);
+    	this.name = name;
+    }
+    
+    public Device(String macAddress, String name , int ip){
+    	this(macAddress,name);
+    	this.setip(ip);
+    
+    }
+    
+    public Device(String macAddress, String name, int ip, String uinqueID){
+    	this(macAddress,name,ip);
+    	this.setuniqueID(uniqueID);
+    }
     
     public String getuniqueID() {
         return uniqueID;
@@ -28,10 +49,6 @@ public class Device {
     
     public String getmacAddress() {
         return macAddress;
-    }
-    
-    public void setmacAddress(String macAddress) {
-        this.macAddress = macAddress;
     }
     
 

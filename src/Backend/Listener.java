@@ -4,7 +4,7 @@
  * - then executes the add-method in DataHandler.
  * @author Stian Johansen
  * @author Anders Skaalsveen
- * @author Runar J¿rgensen
+ * @author Runar Jï¿½rgensen
  */
 package Backend;
 
@@ -21,10 +21,11 @@ public class Listener extends Thread{
 	/*
 	 * @Deprecated
 	 */
-	private deviceDetected(){
+	private boolean deviceDetected(){
 		/*Execute DataHandler.addTouserList()
 		 * even if the device is registered,
 		 * what to do with the info is DataHandlers problem
 		 * */
+		return false;
 	}
 }

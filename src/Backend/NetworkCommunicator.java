@@ -2,7 +2,7 @@
  * class NetworkCommunicator
  * @author Stian Johansen
  * @author Anders Skaalsveen
- * @author Runar J¿rgensen
+ * @author Runar Jï¿½rgensen
  */
 package Backend;
 
@@ -23,7 +23,7 @@ public class NetworkCommunicator extends Thread {
 		listener.start();
 		/*broadcaster is triggered from this thread.*/
 		//QQ: create it as its own thread for readability?
-		broadcaster = new Broadcaster();
+		broadcaster = new Broadcaster(new Device("A MACaddress"));
 		this.broadcastTimeout = broadcastTimeout;
 
 	}
